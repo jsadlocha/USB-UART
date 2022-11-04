@@ -1,0 +1,10 @@
+# configure communication
+stty -F /dev/ttyACM0 cs8 9600 ignbrk -brkint -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
+
+exec 5>/dev/ttyACM0 # open device
+
+echo -ne "send data\n" > /dev/ttyACM0 # write data
+
+cat /dev/ttyACM0 # read data
+
+exec 5>&-  # close file
