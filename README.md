@@ -3,6 +3,7 @@
 ## project in progress...
 </br></br></br>
 
+I use Arduino uno as USB-UART for testing the main board.
 
 ## Files
 main.hex - firmware for usb-uart on atmega8.
@@ -11,22 +12,22 @@ Makefile - build system.
 
 tools/serial_monitor.py - serial monitor implemented in python.
 
-tools/uart_proxy.cpp - uart proxy implementation on esp8266 for testing main board.
-
 ## Compilation
-make - build project
+`make` - build project
 
-make flash - burn on chip through programmer stk500v1. I use arduino uno board as programmer with arduinoisp.
+`make flash` - burn on chip through programmer stk500v1. I use arduino uno board as programmer with arduinoisp.
 
 
 ## USB-UART Circuit diagram
 
 ![USB_UART](https://user-images.githubusercontent.com/108707659/198907135-b436ccb3-076b-4b09-a1f1-59eedfc9d483.png)
 
-## Circuit board and whole environment
+## Circuit board
 
-![usb-uart_and_uart-proxy-strip](https://user-images.githubusercontent.com/108707659/200113160-c766eea7-4ece-4f0a-b9fa-96a48175beff.jpg)
+![board2](https://user-images.githubusercontent.com/108707659/200307752-016c9318-0601-4c16-a88c-0e95c249611b.jpg)
+
 
 
 ## High level diagram
-![environment](https://user-images.githubusercontent.com/108707659/200113178-2214fb50-fe7b-47c4-8d4b-142e1fa9628c.png)
+
+![Diagram1](https://user-images.githubusercontent.com/108707659/200307810-6968f86c-220e-453f-810d-168a3441ab24.png)
